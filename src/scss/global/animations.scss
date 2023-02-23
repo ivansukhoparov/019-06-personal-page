@@ -1,0 +1,37 @@
+@keyframes fade-in {}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fill-background {
+    from {
+        background-color: #fff;
+    }
+
+    to {
+        background-color: #112240;
+    }
+
+}
+
+@keyframes blink {
+
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
