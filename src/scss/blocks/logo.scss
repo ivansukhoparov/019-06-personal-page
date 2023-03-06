@@ -1,0 +1,20 @@
+.logo {
+    font-family: monospace, Arial, sans-serif;
+    color: #64ffda;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid #64ffda;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+
+    align-items: center;
+    border-radius: 50%;
+
+    transition: border-radius 300ms;
+
+    &:hover {
+        border-radius: 0;
+    }
+}

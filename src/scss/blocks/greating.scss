@@ -1,0 +1,22 @@
+.greating {}
+
+.gearting__text {
+    max-width: 600px;
+    @include font-family-main;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.greating__name {
+    @include font-family-main;
+    font-size: 80px;
+    font-weight: 600;
+    color: $text-light;
+}
+
+.greating__description {
+    @include font-family-main;
+    font-weight: 600;
+    font-size: 80px;
+
+}

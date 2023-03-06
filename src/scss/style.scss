@@ -1,10 +1,20 @@
-@import "global/variables";
-@import "global/fonts";
-@import "global/tags";
-@import "global/mixins";
-@import "global/colors";
+@import "global/variables.scss";
+@import "global/colors.scss";
+@import "global/fonts.scss";
+@import "global/tags.scss";
+@import "global/mixins.scss";
 @import "global/animations.scss";
 
+@import "blocks/button.scss";
+@import "blocks/logo.scss";
+@import "blocks/link.scss";
 @import "blocks/intro.scss";
-@import "blocks/page";
-@import "blocks/visually-hidden";
+@import "blocks/page.scss";
+@import "blocks/nav.scss";
+@import "blocks/greating.scss";
+@import "blocks/social.scss";
+@import "blocks/email.scss";
+@import "blocks/contacts.scss";
+@import "blocks/title.scss";
+
+@import "blocks/visually-hidden.scss";

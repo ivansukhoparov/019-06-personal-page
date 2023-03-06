@@ -1,4 +1,19 @@
 p {
     margin: 0;
     padding: 0;
+    color: $text-main;
+}
+
+a {
+    color: $special-color;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $special-color;
+    }
+
 }

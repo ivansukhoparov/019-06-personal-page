@@ -23,7 +23,8 @@
 .intro__cmd {
     font-size: 30px;
     font-weight: bold;
-    font-family: monospace;
+    @include font-family-console;
+    color: $text-black;
 
     @media (min-width: $tablet-width) {
         font-size: 60px;

@@ -1,0 +1,17 @@
+.email {
+    display: block;
+    width: 30px;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 120px;
+        width: 1px;
+        background-color: #8892b0;
+        bottom: -150px;
+        left: 12px;
+    }
+}
+
+.email__link {}

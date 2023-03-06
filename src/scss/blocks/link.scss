@@ -1,0 +1,23 @@
+.link {
+
+
+    &::after {
+        content: '';
+        background-color: $special-color;
+        height: 1px;
+        width: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+
+        transition: width 300ms;
+
+    }
+
+    &:hover::after {
+        opacity: 1;
+        width: 100%;
+
+    }
+}

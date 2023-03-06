@@ -35,3 +35,23 @@
         opacity: 1;
     }
 }
+
+@keyframes social-up {
+    0% {
+        margin-bottom: 0;
+    }
+
+    100% {
+        margin-bottom: 4px;
+    }
+}
+
+@keyframes social-down {
+    0% {
+        margin-bottom: 4px;
+    }
+
+    100% {
+        margin-bottom: 0;
+    }
+}

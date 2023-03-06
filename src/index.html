@@ -4,47 +4,298 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ladder Calculator for ESK</title>
+    <title>Ivan Sukhoparov</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class=" intro">
-
+    <h1 class="visually-hidden">Ivan Sukhoparov's pesonal page</h1>
     <div class="intro__wrapper">
         <p class="intro__cmd" id="cmd-line"></p>
     </div>
 
     <div class="page__menu nav hidden">
+        <div class="nav__logo logo">IS</div>
         <ul class="nav__list">
             <li class="nav__item">
-                <a href="#">About</a>
+                <a class="nav__link" href="#">About</a>
             </li>
             <li class="nav__item">
-                <a href="#">Skills</a>
+                <a class="nav__link" href="#">Skills</a>
             </li>
             <li class="nav__item">
-                <a href="#">Experience</a>
+                <a class="nav__link" href="#">Experience</a>
             </li>
             <li class="nav__item">
-                <a href="#">Works</a>
+                <a class="nav__link" href="#">Works</a>
             </li>
             <li class="nav__item">
-                <a href="#">Contacts</a>
+                <a class="nav__link" href="#">Contacts</a>
             </li>
         </ul>
+        <a class="button nav__button">Resume</a>
     </div>
 
-    <section class="page__greating greating hidden">
-        <p class="gearting__text special">>>> Hello, world!</p>
+    <div class="page__social social hidden">
+        <ul class="social__list">
+            <li class="social__item">
+                <a href="https://goo.gl/maps/XXBjU4BSbaSxKEi2A" class="social__link social__link--place">
+                    <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M253.924,127.592a64,64,0,1,0,64,64A64.073,64.073,0,0,0,253.924,127.592Zm0,96a32,32,0,1,1,32-32A32.037,32.037,0,0,1,253.924,223.592Z" />
+                        <path
+                            d="M376.906,68.515A173.922,173.922,0,0,0,108.2,286.426L229.107,472.039a29.619,29.619,0,0,0,49.635,0L399.653,286.426A173.921,173.921,0,0,0,376.906,68.515Zm-4.065,200.444L253.925,451.509,135.008,268.959C98.608,213.08,106.415,138.3,153.571,91.142a141.92,141.92,0,0,1,200.708,0C401.435,138.3,409.241,213.08,372.841,268.959Z" />
+                    </svg>
+
+                    <span class="social__text visually-hidden"> Georgia, Batumi</span>
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="mailto:rbcdaaa@gmail.com" class="social__link social__link--email">
+                    <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M16,112V496H496V112ZM236.8,341.6a32.167,32.167,0,0,0,38.4,0L298.667,324,464,448v16H48V448L213.333,324ZM256,316,48,160V144H464v16ZM48,200,186.667,304,48,408ZM464,408,325.333,304,464,200Z" />
+                    </svg>
+                    <span class="social__text visually-hidden">rbcdaaa@google.com</span>
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="tel:+995558550487" class="social__link social__link--phone">
+                    <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M449.366,89.648l-.685-.428L362.088,46.559,268.625,171.176l43,57.337a88.529,88.529,0,0,1-83.115,83.114l-57.336-43L46.558,362.088l42.306,85.869.356.725.429.684a25.085,25.085,0,0,0,21.393,11.857h22.344A327.836,327.836,0,0,0,461.222,133.386V111.041A25.084,25.084,0,0,0,449.366,89.648Zm-20.144,43.738c0,163.125-132.712,295.837-295.836,295.837h-18.08L87,371.76l84.18-63.135,46.867,35.149h5.333a120.535,120.535,0,0,0,120.4-120.4v-5.333l-35.149-46.866L371.759,87l57.463,28.311Z" />
+                    </svg>
+                    <span class="social__text visually-hidden">+995 558 550 487</span>
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="https://wa.me/995558550487" class="social__link social__link--whatsapp">
+                    <svg class="social__icon" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m23.328 19.177c-.401-.203-2.354-1.156-2.719-1.292-.365-.13-.63-.198-.896.203-.26.391-1.026 1.286-1.26 1.547s-.464.281-.859.104c-.401-.203-1.682-.62-3.203-1.984-1.188-1.057-1.979-2.359-2.214-2.76-.234-.396-.026-.62.172-.818.182-.182.401-.458.604-.698.193-.24.255-.401.396-.661.13-.281.063-.5-.036-.698s-.896-2.161-1.229-2.943c-.318-.776-.651-.677-.896-.677-.229-.021-.495-.021-.76-.021s-.698.099-1.063.479c-.365.401-1.396 1.359-1.396 3.297 0 1.943 1.427 3.823 1.625 4.104.203.26 2.807 4.26 6.802 5.979.953.401 1.693.641 2.271.839.953.302 1.823.26 2.51.161.76-.125 2.354-.964 2.688-1.901.339-.943.339-1.724.24-1.901-.099-.182-.359-.281-.76-.458zm-7.245 9.823h-.021c-2.365 0-4.703-.641-6.745-1.839l-.479-.286-5 1.302 1.344-4.865-.323-.5c-1.318-2.099-2.021-4.521-2.021-7.01 0-7.26 5.943-13.182 13.255-13.182 3.542 0 6.865 1.38 9.365 3.88 2.5 2.479 3.88 5.802 3.88 9.323-.01 7.255-5.948 13.177-13.25 13.177zm11.276-24.401c-3.042-2.938-7.042-4.599-11.297-4.599-8.776 0-15.922 7.115-15.927 15.859 0 2.792.729 5.516 2.125 7.927l-2.26 8.214 8.448-2.203c2.328 1.255 4.948 1.927 7.615 1.932h.005c8.781 0 15.927-7.115 15.932-15.865 0-4.234-1.651-8.219-4.661-11.214z" />
+                    </svg>
+                    <span class="social__text visually-hidden">+995 558 550 487</span>
+                </a>
+            </li>
+            <a href="https://t.me/ivan_Su14688" class="social__link social__link--telegram">
+                <svg class="social__icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m16 .5c-8.563 0-15.5 6.938-15.5 15.5s6.938 15.5 15.5 15.5c8.563 0 15.5-6.938 15.5-15.5s-6.938-15.5-15.5-15.5zm7.613 10.619-2.544 11.988c-.188.85-.694 1.056-1.4.656l-3.875-2.856-1.869 1.8c-.206.206-.381.381-.781.381l.275-3.944 7.181-6.488c.313-.275-.069-.431-.482-.156l-8.875 5.587-3.825-1.194c-.831-.262-.85-.831.175-1.231l14.944-5.763c.694-.25 1.3.169 1.075 1.219z" />
+                </svg>
+                <span class="social__text visually-hidden">@Ivan_Su14688</span>
+            </a>
+            <li class="social__item">
+                <a href="https://github.com/ivansukhoparov" class="social__link social__link--git">
+                    <svg class="social__icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m16 .396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183.803.151 1.093-.344 1.093-.772 0-.38-.009-1.385-.015-2.719-4.453.964-5.391-2.151-5.391-2.151-.729-1.844-1.781-2.339-1.781-2.339-1.448-.989.115-.968.115-.968 1.604.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328.14-1.031.557-1.74 1.011-2.135-3.552-.401-7.287-1.776-7.287-7.907 0-1.751.62-3.177 1.645-4.297-.177-.401-.719-2.031.141-4.235 0 0 1.339-.427 4.4 1.641 1.281-.355 2.641-.532 4-.541 1.36.009 2.719.187 4 .541 3.043-2.068 4.381-1.641 4.381-1.641.859 2.204.317 3.833.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891.556.479 1.077 1.464 1.077 2.959 0 2.14-.02 3.864-.02 4.385 0 .416.28.916 1.104.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z" />
+                    </svg>
+                    <span class="social__text visually-hidden">GitHub</span>
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="https://www.linkedin.com/in/ivan-sukhoparov-041a1476/"
+                    class="social__link social__link--linkedin">
+                    <svg class="social__icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m27.26 27.271h-4.733v-7.427c0-1.771-.037-4.047-2.475-4.047-2.468 0-2.844 1.921-2.844 3.916v7.557h-4.739v-15.271h4.552v2.083h.061c.636-1.203 2.183-2.468 4.491-2.468 4.801 0 5.692 3.161 5.692 7.271v8.385zm-20.145-17.359c-1.527 0-2.751-1.235-2.751-2.756 0-1.516 1.229-2.749 2.751-2.749s2.755 1.233 2.755 2.749c0 1.521-1.233 2.756-2.755 2.756zm2.374 17.359h-4.749v-15.271h4.749zm20.147-27.271h-27.276c-1.303 0-2.36 1.031-2.36 2.307v27.387c0 1.276 1.057 2.307 2.36 2.307h27.271c1.301 0 2.369-1.031 2.369-2.307v-27.387c0-1.276-1.068-2.307-2.369-2.307z" />
+                    </svg>
+                    <span class="social__text visually-hidden">LinkedIn Profile</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="page__email social hidden">
+        <ul class="social__list">
+
+            <li class="social__item">
+                <a href="mailto:rbcdaaa@gmail.com" class="social__link social__link--email">
+
+
+                    <span class="social__text social__text--mail">rbcdaaa@google.com</span>
+                </a>
+            </li>
+
+        </ul>
+
+
+    </div>
+
+    <section class="page__content page__content--greating greating hidden">
+        <h2 class="visually-hidden">Introduction</h2>
+        <p class="gearting__text special">>>> Hello, world! I am</p>
         <p class="greating__name">Ivan Sukhoparov.</p>
         <p class="greating__description">Front-end Developer - junior.</p>
-        <p class="gearting__text text">Hi, I'm Ivan Sukhoparov, I'm junior frontend developer quite proficient in html,
-            CSS and js for more see <a href="">my skills stack</a>.
-            I have not great experience in this profession, but I like to do it. In past I was an architect and painter.
-            Some of my works you can see in <a href="">this section</a>. </p>
+        <p class="gearting__text text">Hi, I'm Ivan Sukhoparov, I'm junior frontend developer quite proficient in
+            html,
+            CSS and js for more see <a class="link" href="">my skills stack</a>.
+            I have not great experience in this profession, but I like to do it. In past I was an architect and
+            painter.
+            Some of my works you can see in <a class="link" href="">this section</a>. </p>
 
     </section>
 
+    <section class="page__content about hidden">
+        <h2 class="page__title title">About me</h2>
+        <div class="about__wrapper">
+            <p class="about__text text">Hello! My name is Ivan and I enjoy creating things that live on the
+                internet. My interest in web development started back in 2012 when I decided to try editing custom
+                Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
+
+                Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a
+                huge corporation, and a student-led design studio. My main focus these days is building accessible,
+                inclusive products and digital experiences at Upstatement for a variety of clients.
+
+                I also recently launched a course that covers everything you need to build a web app with the Spotify
+                API using Node & React.
+            </p>
+
+            <img class="about__photo" src="https://via.placeholder.com/300x300" width="300" height="300"
+                alt="profile photo">
+        </div>
+    </section>
+
+    <section class="page__content skills hidden">
+        <h2 class="page__title title">Skills</h2>
+        <ul class="skills__list">
+            <li class="skills__item skill">
+                <p class="skill__title">HTML5</p>
+                <img class="skill__img" src="https://via.placeholder.com/300x200" width="300" height="200"
+                    alt="HTML icon">
+            </li>
+            <li class="skills__item skill">
+                <p class="skill__title">HTML5</p>
+                <img class="skill__img" src="https://via.placeholder.com/300x200" width="300" height="200"
+                    alt="HTML icon">
+            </li>
+            <li class="skills__item skill">
+                <p class="skill__title">CSS3</p>
+                <img class="skill__img" src="https://via.placeholder.com/300x200" width="300" height="200"
+                    alt="CSS icon">
+            </li>
+        </ul>
+    </section>
+
+    <section class="page__content experience hidden">
+        <h2 class="page__title title">Skills</h2>
+        <p class="experience__text">I dont have experience yet</p>
+        <div class="experience__wrapper">
+            <ul class="experience__list">
+                <li class="experience__item ">
+                    <a class="experience__button">HTML5</a>
+                </li>
+            </ul>
+            <div class="experience__info">
+                <p class="experience__title">company</p>
+                <p class="experience__period">2012-2018</p>
+                <ul class="experience__info-list">
+                    <li class="experience__info-item">I do somthing at this place</li>
+                    <li class="experience__info-item">And somthing else</li>
+                    <li class="experience__info-item">And somthing else</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="page__content projects hidden">
+        <h2 class="page__title title">Some Things I’ve Built</h2>
+        <ul class="projects__list">
+            <li class="projects__item project">
+                <img class="project__img" src="https://via.placeholder.com/550x350" width="550" height="350"
+                    alt="project image">
+                <div class="project__info">
+                    <p class="project__type">Study project</p>
+                    <p class="project__name">NERDS</p>
+                    <p class="project__description">In this project i did that and that, i have thats problrms and i
+                        solve them did that and that and some many text</p>
+                    <ul class="project__tech-list">
+                        <li class="project__tech-item">HTML</li>
+                        <li class="project__tech-item">CSS</li>
+                        <li class="project__tech-item">Js</li>
+                    </ul>
+                    <div class="project__links">
+                        <a class="project__link project__link--git" href="#>
+                            <span class=" visually-hidden" aria-label="GitHub">See on GitHub</span>
+                        </a>
+                        <a class="project__link project__link--git" href="#">
+                            <span class="visually-hidden" aria-label="Web">See on Web</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="page__content contacts hidden">
+        <h2 class="page__title title title--contacts">Get In Touch</h2>
+        <p class="contacts__text">Although I’m not currently looking for any new opportunities, my inbox is always open.
+            Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+        <ul class="social__list social__list--contacts">
+
+            <li class="social__item social__item--contacts">
+                <a href="mailto:rbcdaaa@gmail.com" class="social__link social__link--contacts social__link--email">
+                    <svg class="social__icon social__icon--contacts" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M16,112V496H496V112ZM236.8,341.6a32.167,32.167,0,0,0,38.4,0L298.667,324,464,448v16H48V448L213.333,324ZM256,316,48,160V144H464v16ZM48,200,186.667,304,48,408ZM464,408,325.333,304,464,200Z" />
+                    </svg>
+                    <span class="social__text visually-hidden">rbcdaaa@google.com</span>
+                </a>
+            </li>
+            <li class="social__item social__item--contacts">
+                <a href="tel:+995558550487" class="social__link social__link--contacts social__link--phone">
+                    <svg class="social__icon social__icon--contacts" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M449.366,89.648l-.685-.428L362.088,46.559,268.625,171.176l43,57.337a88.529,88.529,0,0,1-83.115,83.114l-57.336-43L46.558,362.088l42.306,85.869.356.725.429.684a25.085,25.085,0,0,0,21.393,11.857h22.344A327.836,327.836,0,0,0,461.222,133.386V111.041A25.084,25.084,0,0,0,449.366,89.648Zm-20.144,43.738c0,163.125-132.712,295.837-295.836,295.837h-18.08L87,371.76l84.18-63.135,46.867,35.149h5.333a120.535,120.535,0,0,0,120.4-120.4v-5.333l-35.149-46.866L371.759,87l57.463,28.311Z" />
+                    </svg>
+                    <span class="social__text visually-hidden">+995 558 550 487</span>
+                </a>
+            </li>
+            <li class="social__item social__item--contacts">
+                <a href="https://wa.me/995558550487" class="social__link social__link--contacts social__link--whatsapp">
+                    <svg class="social__icon social__icon--contacts" height="32" viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m23.328 19.177c-.401-.203-2.354-1.156-2.719-1.292-.365-.13-.63-.198-.896.203-.26.391-1.026 1.286-1.26 1.547s-.464.281-.859.104c-.401-.203-1.682-.62-3.203-1.984-1.188-1.057-1.979-2.359-2.214-2.76-.234-.396-.026-.62.172-.818.182-.182.401-.458.604-.698.193-.24.255-.401.396-.661.13-.281.063-.5-.036-.698s-.896-2.161-1.229-2.943c-.318-.776-.651-.677-.896-.677-.229-.021-.495-.021-.76-.021s-.698.099-1.063.479c-.365.401-1.396 1.359-1.396 3.297 0 1.943 1.427 3.823 1.625 4.104.203.26 2.807 4.26 6.802 5.979.953.401 1.693.641 2.271.839.953.302 1.823.26 2.51.161.76-.125 2.354-.964 2.688-1.901.339-.943.339-1.724.24-1.901-.099-.182-.359-.281-.76-.458zm-7.245 9.823h-.021c-2.365 0-4.703-.641-6.745-1.839l-.479-.286-5 1.302 1.344-4.865-.323-.5c-1.318-2.099-2.021-4.521-2.021-7.01 0-7.26 5.943-13.182 13.255-13.182 3.542 0 6.865 1.38 9.365 3.88 2.5 2.479 3.88 5.802 3.88 9.323-.01 7.255-5.948 13.177-13.25 13.177zm11.276-24.401c-3.042-2.938-7.042-4.599-11.297-4.599-8.776 0-15.922 7.115-15.927 15.859 0 2.792.729 5.516 2.125 7.927l-2.26 8.214 8.448-2.203c2.328 1.255 4.948 1.927 7.615 1.932h.005c8.781 0 15.927-7.115 15.932-15.865 0-4.234-1.651-8.219-4.661-11.214z" />
+                    </svg>
+                    <span class="social__text visually-hidden">+995 558 550 487</span>
+                </a>
+            </li>
+            <a href="https://t.me/ivan_Su14688" class="social__link social__link--contacts social__link--telegram">
+                <svg class="social__icon social__icon--contacts" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m16 .5c-8.563 0-15.5 6.938-15.5 15.5s6.938 15.5 15.5 15.5c8.563 0 15.5-6.938 15.5-15.5s-6.938-15.5-15.5-15.5zm7.613 10.619-2.544 11.988c-.188.85-.694 1.056-1.4.656l-3.875-2.856-1.869 1.8c-.206.206-.381.381-.781.381l.275-3.944 7.181-6.488c.313-.275-.069-.431-.482-.156l-8.875 5.587-3.825-1.194c-.831-.262-.85-.831.175-1.231l14.944-5.763c.694-.25 1.3.169 1.075 1.219z" />
+                </svg>
+                <span class="social__text visually-hidden">@Ivan_Su14688</span>
+            </a>
+            <li class="social__item social__item--contacts">
+                <a href="https://github.com/ivansukhoparov"
+                    class="social__link social__link--contacts social__link--git">
+                    <svg class="social__icon social__icon--contacts" viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m16 .396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183.803.151 1.093-.344 1.093-.772 0-.38-.009-1.385-.015-2.719-4.453.964-5.391-2.151-5.391-2.151-.729-1.844-1.781-2.339-1.781-2.339-1.448-.989.115-.968.115-.968 1.604.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328.14-1.031.557-1.74 1.011-2.135-3.552-.401-7.287-1.776-7.287-7.907 0-1.751.62-3.177 1.645-4.297-.177-.401-.719-2.031.141-4.235 0 0 1.339-.427 4.4 1.641 1.281-.355 2.641-.532 4-.541 1.36.009 2.719.187 4 .541 3.043-2.068 4.381-1.641 4.381-1.641.859 2.204.317 3.833.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891.556.479 1.077 1.464 1.077 2.959 0 2.14-.02 3.864-.02 4.385 0 .416.28.916 1.104.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z" />
+                    </svg>
+                    <span class="social__text visually-hidden">GitHub</span>
+                </a>
+            </li>
+            <li class="social__item social__item--contacts">
+                <a href="https://www.linkedin.com/in/ivan-sukhoparov-041a1476/"
+                    class="social__link social__link--contacts social__link--linkedin">
+                    <svg class="social__icon social__icon--contacts" viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m27.26 27.271h-4.733v-7.427c0-1.771-.037-4.047-2.475-4.047-2.468 0-2.844 1.921-2.844 3.916v7.557h-4.739v-15.271h4.552v2.083h.061c.636-1.203 2.183-2.468 4.491-2.468 4.801 0 5.692 3.161 5.692 7.271v8.385zm-20.145-17.359c-1.527 0-2.751-1.235-2.751-2.756 0-1.516 1.229-2.749 2.751-2.749s2.755 1.233 2.755 2.749c0 1.521-1.233 2.756-2.755 2.756zm2.374 17.359h-4.749v-15.271h4.749zm20.147-27.271h-27.276c-1.303 0-2.36 1.031-2.36 2.307v27.387c0 1.276 1.057 2.307 2.36 2.307h27.271c1.301 0 2.369-1.031 2.369-2.307v-27.387c0-1.276-1.068-2.307-2.369-2.307z" />
+                    </svg>
+                    <span class="social__text visually-hidden">LinkedIn Profile</span>
+                </a>
+            </li>
+        </ul>
+
+    </section>
 
     <script src="js/main.js" type="module"></script>
 </body>

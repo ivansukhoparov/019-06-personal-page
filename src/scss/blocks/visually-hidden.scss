@@ -14,3 +14,9 @@
 .hidden {
     display: none;
 }
+
+.special {
+    @include font-family-console;
+    color: $special-color;
+    font-size: 18px;
+}

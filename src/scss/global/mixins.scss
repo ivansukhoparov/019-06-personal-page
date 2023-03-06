@@ -1,1 +1,9 @@
-@mixin paddings {}
+@mixin font-family-main {
+    font-family: 'Calibre', Arial, sans-serif;
+
+}
+
+@mixin font-family-console {
+    font-family: monospace, Arial, sans-serif;
+
+}
