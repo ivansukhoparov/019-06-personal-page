@@ -15,26 +15,30 @@
     </div>
 
     <div class="page__menu nav hidden">
-        <div class="nav__logo logo">IS</div>
-        <ul class="nav__list">
+        <div class="nav__logo logo"><a href="#greating">IS</a></div>
+        <ol class="nav__list">
             <li class="nav__item">
-                <a class="nav__link" href="#">About</a>
+                <a class="nav__link" href="#about">About</a>
             </li>
             <li class="nav__item">
-                <a class="nav__link" href="#">Skills</a>
+                <a class="nav__link" href="#skills">Skills</a>
             </li>
             <li class="nav__item">
-                <a class="nav__link" href="#">Experience</a>
+                <a class="nav__link" href="#experience">Experience</a>
             </li>
             <li class="nav__item">
-                <a class="nav__link" href="#">Works</a>
+                <a class="nav__link" href="#projects">Works</a>
             </li>
             <li class="nav__item">
-                <a class="nav__link" href="#">Contacts</a>
+                <a class="nav__link" href="#contacts">Contacts</a>
             </li>
-        </ul>
-        <a class="button nav__button">Resume</a>
+            <li class="nav__item nav__item--special">
+                <a class="button nav__button">Resume</a>
+            </li>
+        </ol>
+        <button class="nav__toogle"><span class="visually-hidden">Open menu</span></button>
     </div>
+
 
     <div class="page__social social hidden">
         <ul class="social__list">
@@ -123,7 +127,7 @@
 
     </div>
 
-    <section class="page__content page__content--greating greating hidden">
+    <section id="greating" class="page__content page__content--greating greating hidden">
         <h2 class="visually-hidden">Introduction</h2>
         <p class="gearting__text special">>>> Hello, world! I am</p>
         <p class="greating__name">Ivan Sukhoparov.</p>
@@ -137,7 +141,7 @@
 
     </section>
 
-    <section class="page__content about hidden">
+    <section id="about" class="page__content about hidden">
         <h2 class="page__title title">About me</h2>
         <div class="about__wrapper">
             <p class="about__text text">Hello! My name is Ivan and I enjoy creating things that live on the
@@ -157,7 +161,7 @@
         </div>
     </section>
 
-    <section class="page__content skills hidden">
+    <section id="skills" class="page__content skills hidden">
         <h2 class="page__title title">Skills</h2>
         <ul class="skills__list">
             <li class="skills__item skill">
@@ -178,7 +182,7 @@
         </ul>
     </section>
 
-    <section class="page__content experience hidden">
+    <section id="experience" class="page__content experience hidden">
         <h2 class="page__title title">Skills</h2>
         <p class="experience__text">I dont have experience yet</p>
         <div class="experience__wrapper">
@@ -199,7 +203,7 @@
         </div>
     </section>
 
-    <section class="page__content projects hidden">
+    <section id="projects" class="page__content projects hidden">
         <h2 class="page__title title">Some Things I’ve Built</h2>
 
         <ul class="projects__list">
@@ -287,7 +291,7 @@
         </ul>
     </section>
 
-    <section class="page__content contacts hidden">
+    <section id="contacts" class="page__content contacts hidden">
         <h2 class="page__title title title--contacts">Get In Touch</h2>
         <p class="contacts__text">Although I’m not currently looking for any new opportunities, my inbox is always open.
             Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>

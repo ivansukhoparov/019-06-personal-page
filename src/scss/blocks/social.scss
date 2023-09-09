@@ -1,4 +1,10 @@
 .social {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+        display: block;
+    }
+
     &::after {
         content: "";
         display: block;

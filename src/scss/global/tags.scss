@@ -15,5 +15,8 @@ a {
     &:focus {
         color: $special-color;
     }
+}
 
+img {
+    max-width: 90vw;
 }

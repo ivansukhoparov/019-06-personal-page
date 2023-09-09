@@ -98,4 +98,5 @@ function showPage(params) {
         element.classList.remove('hidden');
     });
 }
+
 load()
