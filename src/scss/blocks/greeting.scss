@@ -3,8 +3,9 @@
 .greeting__text {
     max-width: 600px;
     @include font-family-main;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
+    margin: 20px 0;
 }
 
 .greeting__name {
@@ -12,6 +13,14 @@
     font-size: 40px;
     font-weight: 600;
     color: $text-light;
+
+    @media (min-width: $tablet-width) {
+        font-size: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-size: 80px;
+    }
 }
 
 .greeting__description {
@@ -19,4 +28,11 @@
     font-weight: 600;
     font-size: 40px;
 
+    @media (min-width: $tablet-width) {
+        font-size: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-size: 80px;
+    }
 }
