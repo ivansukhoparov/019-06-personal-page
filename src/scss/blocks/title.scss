@@ -9,6 +9,7 @@
     justify-content: flex-start;
     align-items: baseline;
     gap: 10px;
+    white-space: nowrap;
 
     &::before {
         content: "> ";
@@ -22,7 +23,7 @@
         display: block;
         position: relative;
         height: 1px;
-        width: 300px;
+        width: 100%;
         top: -5px;
         background-color: $text-main;
         opacity: 0.5;
