@@ -1,22 +1,22 @@
-.greating {}
+.greeting {}
 
-.gearting__text {
+.greeting__text {
     max-width: 600px;
     @include font-family-main;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
 }
 
-.greating__name {
+.greeting__name {
     @include font-family-main;
-    font-size: 80px;
+    font-size: 40px;
     font-weight: 600;
     color: $text-light;
 }
 
-.greating__description {
+.greeting__description {
     @include font-family-main;
     font-weight: 600;
-    font-size: 80px;
+    font-size: 40px;
 
 }
