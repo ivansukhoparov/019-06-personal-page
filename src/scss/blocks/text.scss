@@ -1,0 +1,7 @@
+.text {
+    max-width: 600px;
+    @include font-family-main;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 0;
+}

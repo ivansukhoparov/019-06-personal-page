@@ -9,6 +9,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     transition: background-color 2s;
+
+    @media (min-width: $tablet-width) {
+        padding: 0 80px;
+    }
 }
 
 .page__social {
@@ -28,6 +32,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 0 25px;
+    min-height: 100vh;
 
     &--greeting {
         height: 100vh;
